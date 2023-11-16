@@ -16,7 +16,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           
       - name: Cambio dir
-        run: cd ./app
+        run: ls && cd app
         
       - name: Build and push
         uses: docker/build-push-action@v5
